@@ -76,7 +76,9 @@ for (let i = 0; i < 5; i++) {
 
 function game( titre, propositions,reponse,phraseReponse) {
     console.log(titre);
-    console.log(propositions);
+    for (let i = 0; i < propositions.length; i++) {
+        console.log(propositions[i]);
+    }
     let choice = Number(prompt(" Ta réponse est la réponse n° "))
     while (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
         choice = Number(prompt("Il n'y a que 4 proposition espèce de con "))
