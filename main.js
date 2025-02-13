@@ -61,10 +61,18 @@ const quiz = [
 ];
 
 let result=0
+console.log("Bienvenue dans le super quizz spécial Thomas");
+console.log("Si tu le connais bien tu vas être le meilleur à ce jeux");
+
+
 for (let i = 0; i < 5; i++) {
     console.log(game(quiz[i].titre,quiz[i].propositions,quiz[i].reponse,quiz[i].phraseReponse));
 }
  console.log("Partie terminée tu as " + result + " points");
+ console.log("Donc maintenant tu as compris va voir Brendan il est meileur!!");
+ console.log("© Moi");
+ 
+ 
 
 function game( titre, propositions,reponse,phraseReponse) {
     console.log(titre);
