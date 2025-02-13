@@ -1,5 +1,4 @@
 const prompt = require("prompt-sync")()
-let result = 0
 const quiz = [
     {
         titre: "Quand Thomas commence un design, il se dit toujours :",
@@ -61,13 +60,13 @@ const quiz = [
     }
 ];
 
-
+let result=0
 for (let i = 0; i < 5; i++) {
-    console.log(game(quiz[i].titre,quiz[i].propositions,quiz[i].reponse,quiz[i].phraseReponse,result));
+    console.log(game(quiz[i].titre,quiz[i].propositions,quiz[i].reponse,quiz[i].phraseReponse));
 }
  console.log("Partie terminée tu as " + result + " points");
 
-function game( titre, propositions,reponse,phraseReponse,result) {
+function game( titre, propositions,reponse,phraseReponse) {
     console.log(titre);
     console.log(propositions);
     let choice = Number(prompt(" Ta réponse est la réponse n° "))
@@ -78,7 +77,7 @@ function game( titre, propositions,reponse,phraseReponse,result) {
         console.log("la Bonne réponse est: ", reponse[1]);
         console.log(phraseReponse);
         console.log("Bravo!! Tu as trouvé");
-        result+= 1
+        result++
     } else {
         console.log("la Bonne réponse est: ", reponse[1]);
         console.log(phraseReponse);
