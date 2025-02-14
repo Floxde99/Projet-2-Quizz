@@ -1,4 +1,6 @@
 const prompt = require("prompt-sync")()
+
+let result = 0
 const quiz = [
     {
         titre: "Quand Thomas commence un design, il se dit toujours :",
@@ -60,7 +62,6 @@ const quiz = [
     }
 ];
 
-let result = 0
 console.log("Bienvenue dans le super quizz spécial Thomas");
 console.log("Si tu le connais bien tu vas être le meilleur à ce jeux");
 
