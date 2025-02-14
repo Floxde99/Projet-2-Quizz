@@ -82,7 +82,7 @@ function game(titre, propositions, reponse, phraseReponse) {
     }
     let choice = Number(prompt(" Ta réponse est la réponse n° "))
     while (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
-        choice = Number(prompt("Il n'y a que 4 proposition espèce de con "))
+        choice = Number(prompt("Il n'y a que 4 propositions espèce de con "))
     }
     if (choice == reponse[0]) {
         console.log("la Bonne réponse est: ", reponse[1]);
